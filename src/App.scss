@@ -58,27 +58,6 @@ img, svg {
   display: block;
   max-width: 100%;
 }
-@font-face { 
-  font-family: 'Vollkorn'; 
-  src: url('./assets/fonts/VollkornRegular/Vollkorn-Regular.woff2') format('woff2'), 
-       url('./assets/fonts/VollkornRegular/Vollkorn-Regular.woff') format('woff'); 
-  font-weight: 400; 
-  font-style: normal; 
-}
-@font-face { 
-  font-family: 'Montserrat'; 
-  src: url('./assets/fonts/MontserratRegular/Montserrat-Regular.woff2') format('woff2'), 
-       url('./assets/fonts/MontserratRegular/Montserrat-Regular.woff') format('woff'); 
-  font-weight: 400; 
-  font-style: normal; 
-}
-@font-face { 
-  font-family: 'Vollkorn-italic'; 
-  src: url('./assets/fonts/VollkornItalic/vollkorn.italic.woff2') format('woff2'), 
-       url('./assets/fonts/VollkornItalic/vollkorn.italic.woff') format('woff'); 
-  font-weight: 400; 
-  font-style: italic; 
-}
 
 :root {
   --dark-grey-color: #333333;
