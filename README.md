@@ -1,6 +1,8 @@
 # [mnm-agency](https://mnm-ts.netlify.app/) << deploy
 
-- React(hooks), TypeScript, Vite
+- React(hooks)
+- TypeScript
+- Vite
 - react-dom
 - react-router-dom(createBrowserRouter)
 - eslint
@@ -9,4 +11,3 @@
 - react-player
 - Swiper
 - Sass(scss)
-
