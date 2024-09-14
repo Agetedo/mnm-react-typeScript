@@ -1,6 +1,6 @@
 # [mnm-agency](https://mnm-ts.netlify.app/) << deploy
 
-- React(hooks), TypeScript, Vite
+- React(Hooks), TypeScript, Vite
 - react-dom
 - react-router-dom(createBrowserRouter)
 - eslint
