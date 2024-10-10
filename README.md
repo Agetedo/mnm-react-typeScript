@@ -3,7 +3,6 @@
 - React(hooks)
 - TypeScript
 - Vite
-- react-dom
 - react-router-dom(createBrowserRouter)
 - eslint
 - react-error-boundary
