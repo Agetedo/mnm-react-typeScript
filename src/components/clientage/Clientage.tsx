@@ -1,6 +1,15 @@
 import { clientsLogos } from "./clientsLogos.ts";
 import "./Clientage.scss";
 
+export default function Clientage() {
+  return (
+    <ClientsConteiner className="clients">
+      <ClientsTitle title={"Our Clients and Partners"} />
+      <ClientsCards />
+    </ClientsConteiner>
+  );
+}
+
 interface ClientsContainerProps {
   className: string;
   children: React.ReactNode;
@@ -24,13 +33,4 @@ function ClientsCards() {
     </li>
   );  
   return <ul className="clients__list">{clientsList}</ul>
-}
-
-export default function Clientage() {
-  return (
-    <ClientsConteiner className="clients">
-      <ClientsTitle title={"Our Clients and Partners"} />
-      <ClientsCards />
-    </ClientsConteiner>
-  );
 }
