@@ -3,6 +3,16 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import FooterConteiner from "./FooterConteiner";
 import "./Footer.scss";
 
+export default function Footer() {
+  return (
+    <FooterConteiner className="footer" id="footer">
+      <FooterForm />
+      <FooterLogo logoSrc={"/footer-logo.png"} logoAlt={"MNM logo"}/>
+      <FooterRights rightsText={" Minimal All rights reserved."} />
+    </FooterConteiner>  
+  );
+}
+
 function FooterFormButton({ buttonText }: { buttonText: string } ) {
   return (
     <div className="footer__button">
@@ -78,7 +88,7 @@ function FooterForm() {
           validate: {
             maxLength: (v) => v.length <= 30 || "The Email should have at most 50 characters",
             matchPattern: (v) =>
-            /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+              /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
             "Email address must be a valid address",
           },
         })}
@@ -115,15 +125,5 @@ function FooterForm() {
       )}
       <FooterFormButton buttonText={"Send Message"}/>
     </form>
-  );
-}
-
-export default function Footer() {
-  return (
-    <FooterConteiner className="footer" id="footer">
-      <FooterForm />
-      <FooterLogo logoSrc={"/footer-logo.png"} logoAlt={"MNM logo"}/>
-      <FooterRights rightsText={" Minimal All rights reserved."} />
-    </FooterConteiner>  
   );
 }
