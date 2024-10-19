@@ -1,6 +1,19 @@
 import ConteinerWithBg from "../ConteinerWithBg";
 import "./Representation.scss";
 
+export default function Representation() {
+  return (
+    <ConteinerWithBg className="representation" imageUrl={"/representation-bg.jpg"}>
+      <RepresentationContent
+        content={{ 
+          title:"Making brands stand out is our obsession",
+          text:"Let us help your brand stand out" 
+        }} 
+      />
+    </ConteinerWithBg>
+  );
+}
+
 interface RepresentationContent {
   title: string;
   text: string;
@@ -12,18 +25,5 @@ function RepresentationContent({ content }: { content: RepresentationContent }) 
       <hr className="line"/>
       <p className="text">{content.text}</p>
     </>
-  );
-}
-
-export default function Representation() {
-  return (
-    <ConteinerWithBg className="representation" imageUrl={"/representation-bg.jpg"}>
-      <RepresentationContent
-        content={{ 
-          title:"Making brands stand out is our obsession",
-          text:"Let us help your brand stand out" 
-        }} 
-      />
-    </ConteinerWithBg>
   );
 }
