@@ -1,8 +1,5 @@
 import "./BlockTitle.scss";
 
-function Line() {
-  return ( <> <hr className="title__line" /> </> );
-}
 export default function BlockTitle({ title }: { title: string }) {
   return (
     <div className="title">
@@ -10,4 +7,7 @@ export default function BlockTitle({ title }: { title: string }) {
       <Line />
     </div>  
   );
+}
+function Line() {
+  return ( <> <hr className="title__line" /> </> );
 }
