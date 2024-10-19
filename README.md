@@ -9,7 +9,7 @@
 - react-hook-form
 - react-player
 - Swiper
-- Sass(scss): FlexBox, Grid, @keyframes, @media queries (Validation of files on https://css-validator.org/ is successful)
+- Sass(scss): FlexBox, Grid, @keyframes, @media queries (Validation of files on css-validator is successful)
 - autoprefixer
 - This project responsive and cross-browser сompatibility
 - Deploy on app.netlify.com from GitHub repository
