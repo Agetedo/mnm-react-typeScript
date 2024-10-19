@@ -9,10 +9,10 @@ export default function App() {
     {
       element: <Layout />,
       errorElement: <Page404 
-      error={"404"} 
-      title={"Page Not Found"} 
-      text={"The page you are looking for does not exist"} 
-      linkTo={"Back to Home"}/>,
+        error={"404"} 
+        title={"Page Not Found"} 
+        text={"The page you are looking for does not exist"} 
+        linkTo={"Back to Home"}/>,
       children: routes,
     }
   ]);
