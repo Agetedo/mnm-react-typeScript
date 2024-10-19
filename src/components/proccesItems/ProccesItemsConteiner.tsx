@@ -4,7 +4,6 @@ interface ItemsContainerProps {
   className: string;
   children: React.ReactNode;
 }
-
 export default function ProccesItemsConteiner({ children, className }: ItemsContainerProps) {
   return (
     <div className={className}>
