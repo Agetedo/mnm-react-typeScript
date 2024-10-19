@@ -1,5 +1,26 @@
 import "./About.scss";
 
+export default function About() {
+  return (
+    <DifferenceConteiner className="difference">
+      <DifferenceTitle title={"Make a Difference For Your Business!"} />
+      <DifferenceItems  
+        content={{ 
+          text1: "We understand that not every company has an in-house department that is always updated and tracks the algorithms, trends, and changes within digital marketing, but we strongly believe every company should have somebody to do so!",
+          text2: "Therefore, we started MINIMAL agency – to offer companies solutions that are completely customized to fit their business needs and goals.",
+          text3: "We tailor high-performing marketing strategies intended to serve and benefit Your company long term.",
+          text4: "MINIMAL is full-service digital creative agency with a highly motivated team.",
+          text5: "Most of us have profound hands-on experience working with and for Google and Google Ads directly. Our marketing masters also have experience with Facebook Ads and SEO.", 
+          text6: "Our team lives and breathes innovative, quick, and smart digital marketing solutions. We want to help as many businesses as possible to find new potential customers, reengage with old ones to reach far beyond growth expectations.", 
+          text7: "Book a meeting with us today, free of charge, and we'll talk about how we can implement a thorough and solid marketing strategy.",
+          image: "/mnm-about-image01.jpg",
+          alt: "Desk with laptop and office supplies", 
+        }} 
+      />
+    </DifferenceConteiner>
+  );
+}
+
 interface DifferenceContainerProps {
   className: string;
   children: React.ReactNode;
@@ -21,7 +42,7 @@ interface TextContent {
   text2: string;  text6: string;
   text3: string;  text7: string;
   text4: string;  image: string;
-};
+}
 function DifferenceItems({ content }: { content: TextContent }) {
   return (
     <div className="difference__items">
@@ -33,26 +54,5 @@ function DifferenceItems({ content }: { content: TextContent }) {
       </div>
       <img src={content.image} alt={content.alt} />
     </div>
-  );
-}
-  
-export default function About() {
-  return (
-    <DifferenceConteiner className="difference">
-      <DifferenceTitle title={"Make a Difference For Your Business!"} />
-      <DifferenceItems  
-        content={{ 
-          text1: "We understand that not every company has an in-house department that is always updated and tracks the algorithms, trends, and changes within digital marketing, but we strongly believe every company should have somebody to do so!",
-          text2: "Therefore, we started MINIMAL agency – to offer companies solutions that are completely customized to fit their business needs and goals.",
-          text3: "We tailor high-performing marketing strategies intended to serve and benefit Your company long term.",
-          text4: "MINIMAL is full-service digital creative agency with a highly motivated team.",
-          text5: "Most of us have profound hands-on experience working with and for Google and Google Ads directly. Our marketing masters also have experience with Facebook Ads and SEO.", 
-          text6: "Our team lives and breathes innovative, quick, and smart digital marketing solutions. We want to help as many businesses as possible to find new potential customers, reengage with old ones to reach far beyond growth expectations.", 
-          text7: "Book a meeting with us today, free of charge, and we'll talk about how we can implement a thorough and solid marketing strategy.",
-          image: "/mnm-about-image01.jpg",
-          alt: "Desk with laptop and office supplies", 
-        }} 
-      />
-    </DifferenceConteiner>
   );
 }
