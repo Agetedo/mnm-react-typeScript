@@ -6,6 +6,19 @@ import closeIcon from "/modal-close-icon.svg";
 import mnmLogo from "/logo.svg";
 import "./Get.scss";
 
+export default function Get() {
+  return (
+    <Conteiner className="get">
+      <GetText  
+        text={"MINIMAL is a full-service digital creative agency located in Ontorio Canada. We focus on design,\
+        consulting, technology, and photography. We've been building unique digital products, platforms\
+        and experiences for the past 6 years. Let Us help Your company grow."}
+      />
+      <GetModal getButtonText={"Get in Touch"}/>
+    </Conteiner>
+  );
+}
+
 function GetText({ text }: { text: string }) {
   return(
     <><p className="get__text">{text}</p></>
@@ -53,7 +66,7 @@ function GetForm({ buttonText }: { buttonText: string }) {
             validate: {
               maxLength: (v) => v.length <= 30 || "The Email should have at most 50 characters",
               matchPattern: (v) =>
-              /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+                /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
               "Email address must be a valid address",
             },
           })}
@@ -111,18 +124,5 @@ function GetModal({ getButtonText }: { getButtonText: string }) {
         document.body
       )}
     </div>
-  );
-}
-
-export default function Get() {
-  return (
-    <Conteiner className="get">
-      <GetText  
-        text={"MINIMAL is a full-service digital creative agency located in Ontorio Canada. We focus on design,\
-        consulting, technology, and photography. We've been building unique digital products, platforms\
-        and experiences for the past 6 years. Let Us help Your company grow."}
-      />
-      <GetModal getButtonText={"Get in Touch"}/>
-    </Conteiner>
   );
 }
