@@ -4,6 +4,15 @@ import { cardLinks } from "./cardLinks.ts";
 import BlockTitle from "../blockTitle/BlockTitle.tsx";
 import "./Procces.scss";
 
+export default function Procces() {
+  return (
+    <Conteiner className="procces">
+      <BlockTitle title={"How we make brands thrive"}/>
+      <ProccesCard />
+    </Conteiner>
+  );
+}
+
 function ProccesCard() {
   const cardList = cardLinks.map( link =>
     <div key={link.id} className="procces__card">
@@ -15,13 +24,4 @@ function ProccesCard() {
     </div>
   );   
   return <div className="procces__items">{cardList}</div>
-}
-
-export default function Procces() {
-  return (
-    <Conteiner className="procces">
-      <BlockTitle title={"How we make brands thrive"}/>
-      <ProccesCard />
-    </Conteiner>
-  );
 }
