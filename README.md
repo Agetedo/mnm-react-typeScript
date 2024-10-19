@@ -1,7 +1,8 @@
-# [mnm-agency](https://mnm-ts.netlify.app/) << deploy
+# [mnm-ts](https://mnm-ts.netlify.app/) << deploy
 
-- React(Hooks), TypeScript, Vite
-- react-dom
+- React(hooks)
+- TypeScript
+- Vite
 - react-router-dom(createBrowserRouter)
 - eslint
 - react-error-boundary
