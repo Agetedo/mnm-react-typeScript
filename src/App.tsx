@@ -1,8 +1,8 @@
-import "./App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import routes from "./routes";
 import Layout from "./components/Layout";
 import Page404 from "./pages/Page404";
+import "./App.scss";
 
 export default function App() {
   const router = createBrowserRouter([
