@@ -3,6 +3,15 @@ import { teamMember } from "./teamMember.ts";
 import BlockTitle from "../blockTitle/BlockTitle.tsx";
 import "./Team.scss";
 
+export default function Team() {
+  return (
+    <Conteiner className="team">
+      <BlockTitle title={"Our team"} />
+      <MemberCard />
+    </Conteiner>
+  );
+}
+
 function MemberCard() {
   const memberList = teamMember.map( member =>
     <div key={member.id} className="team__member">
@@ -29,13 +38,4 @@ function MemberCard() {
     </div>
   );    
   return <div className="team__items">{memberList}</div>
-}
-
-export default function Team() {
-  return (
-    <Conteiner className="team">
-      <BlockTitle title={"Our team"} />
-      <MemberCard />
-    </Conteiner>
-  );
 }
