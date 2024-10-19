@@ -1,4 +1,4 @@
-# [mnm-agency](https://mnm-ts.netlify.app/) << deploy
+# [mnm-ts](https://mnm-ts.netlify.app/) << deploy
 
 - React(hooks)
 - TypeScript
