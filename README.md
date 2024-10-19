@@ -1,9 +1,9 @@
 # [mnm-ts](https://mnm-ts.netlify.app/) << deploy
 
-- React(hooks): useState, useEffect, Suspense, createPortal.
+- React: useState, useEffect, Suspense, createPortal.
 - TypeScript
 - Vite
-- react-router-dom: createBrowserRouter, RouterProvider, NavLink Link, Outlet.
+- react-router-dom: createBrowserRouter, RouterProvider, NavLink, Link, Outlet.
 - eslint
 - react-error-boundary
 - react-hook-form
