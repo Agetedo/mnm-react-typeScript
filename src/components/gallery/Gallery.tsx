@@ -4,6 +4,15 @@ import { galleryCards } from "./galleryCards.ts";
 import BlockTitle from "../blockTitle/BlockTitle.tsx";
 import "./Gallery.scss";
 
+export default function Gallery() {
+  return (
+    <Conteiner className="gallery">
+      <BlockTitle title={"Recent projects"}/>
+      <GalleryProject />
+    </Conteiner>
+  );
+}
+
 function GalleryProject() {
   const galleryList = galleryCards.map( card =>
     <div key={card.id} className="gallery-project">
@@ -21,13 +30,4 @@ function GalleryProject() {
     </div>
   ); 
   return <div className="gallery-items">{galleryList}</div>
-}
-
-export default function Gallery() {
-  return (
-    <Conteiner className="gallery">
-      <BlockTitle title={"Recent projects"}/>
-      <GalleryProject />
-    </Conteiner>
-  );
 }
