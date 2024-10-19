@@ -2,6 +2,28 @@ import ReactPlayer from "react-player";
 import { creationContent } from "./creationContent.ts";
 import "./CreationStages.scss";
 
+export default function Creation() {
+  return (
+    <>
+      <Description 
+        intro={{ 
+          title: "Overview", 
+          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta laudantium iste ipsum illum quibusdam inventore dolore consequatur, autem necessitatibus recusandae, expedita quisquam, labore id animi omnis alias provident tempore. Sor ipdolor sit amet consectetur adipisicing elit. Eligendi dicta laudantium iste ipsum illum quibusdam inventore dolore consequatur, autem necessitatibus recusandae, expedita quisquam, labore id animi omnis alias provident tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium iste ipsum illum quibusdam inventore dolore consequatur autem.",
+          points: "Deliverables", item1: "Brand Strategy & Architecture",
+          item2: "Design Systems", item3: "Design Language", 
+        }} 
+      />
+      <MediaContent />
+      <VideoContent 
+        play={{
+          video: "/ourglass-case.mp4",
+          imageSrc: "/creation-image-08.jpg", imageAlt: "App on phone",
+        }}
+      />
+    </>
+  );
+}
+
 interface DescriptionContent {
   title: string;
   text: string;
@@ -53,28 +75,6 @@ function VideoContent({ play }: { play: VideoContentProps }) {
         width="100%" height="100%"
       />
       <img src={play.imageSrc} alt={play.imageAlt} />
-    </>
-  );
-}
-
-export default function Creation() {
-  return (
-    <>
-      <Description 
-        intro={{ 
-          title: "Overview", 
-          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta laudantium iste ipsum illum quibusdam inventore dolore consequatur, autem necessitatibus recusandae, expedita quisquam, labore id animi omnis alias provident tempore. Sor ipdolor sit amet consectetur adipisicing elit. Eligendi dicta laudantium iste ipsum illum quibusdam inventore dolore consequatur, autem necessitatibus recusandae, expedita quisquam, labore id animi omnis alias provident tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium iste ipsum illum quibusdam inventore dolore consequatur autem.",
-          points: "Deliverables", item1: "Brand Strategy & Architecture",
-          item2: "Design Systems", item3: "Design Language", 
-        }} 
-      />
-      <MediaContent />
-      <VideoContent 
-        play={{
-          video: "/ourglass-case.mp4",
-          imageSrc: "/creation-image-08.jpg", imageAlt: "App on phone",
-        }}
-      />
     </>
   );
 }
