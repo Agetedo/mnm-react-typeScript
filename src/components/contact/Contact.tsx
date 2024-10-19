@@ -3,6 +3,36 @@ import BlockTitle from "../blockTitle/BlockTitle.tsx";
 import { socials } from "./socials.ts";
 import "./Contact.scss";
 
+export default function Contact() {
+  return (
+    <ConteinerWithBg className="contact" imageUrl={"../contact-bg.jpg"}>
+      <BlockTitle title={"Let's get in touch"}/>
+
+      <ContactItems>
+        <ContactAddress 
+          imageLink={"https://goo.gl/maps/YL6c"}
+          addressIcon={"/address-icon.png"} 
+          caption={"MEET US IN PERSON"}
+          adress={"8776 Juniper Street Unit #204 Merriweather, Ontorio Canada"}
+        />
+    
+        <ContactEmail 
+          imageLink={"mailto:contact@minimal.com"} 
+          emailIcon={"/post-icon.png"} 
+          caption={"The traditional way"}
+          emailAdress={"Email us contact@minimal.com"}
+          text1={"Contact form"} text2={"scroll down"}
+        />
+
+        <ContactSocial iconSrc={"/like-icon.png"} caption={"Let's get social"}>
+          <SocialLink />
+        </ContactSocial >
+
+      </ContactItems>
+    </ConteinerWithBg>
+  );
+}
+
 interface ContactAddressProps {
   imageLink: string;
   addressIcon: string; 
@@ -83,35 +113,5 @@ function ContactItems({ children }: { children: React.ReactNode }) {
     <div className="contact-items">
       {children}
     </div>
-  );
-}
-
-export default function Contact() {
-  return (
-    <ConteinerWithBg className="contact" imageUrl={"../contact-bg.jpg"}>
-      <BlockTitle title={"Let's get in touch"}/>
-
-      <ContactItems>
-        <ContactAddress 
-          imageLink={"https://goo.gl/maps/YL6c"}
-          addressIcon={"/address-icon.png"} 
-          caption={"MEET US IN PERSON"}
-          adress={"8776 Juniper Street Unit #204 Merriweather, Ontorio Canada"}
-        />
-    
-        <ContactEmail 
-          imageLink={"mailto:contact@minimal.com"} 
-          emailIcon={"/post-icon.png"} 
-          caption={"The traditional way"}
-          emailAdress={"Email us contact@minimal.com"}
-          text1={"Contact form"} text2={"scroll down"}
-        />
-
-        <ContactSocial iconSrc={"/like-icon.png"} caption={"Let's get social"}>
-          <SocialLink />
-        </ContactSocial >
-
-      </ContactItems>
-    </ConteinerWithBg>
   );
 }
