@@ -5,15 +5,6 @@ import Header from "./header/Header.tsx";
 import Footer from "./footer/Footer.tsx";
 import Loader from "./Loader.tsx";
 
-function ErrorDemo() {
-  return(
-    <p style={{ color: "red", textAlign: "center", fontSize: 20, 
-      lineHeight: 2, paddingTop: 65, paddingLeft: 15, paddingRight: 15, }}>
-      Something went wrong. Please try starting it again!
-    </p>
-  );
-}
-
 export default function Layout() {
   return (
     <>
@@ -27,5 +18,13 @@ export default function Layout() {
         <Footer />
       </ErrorBoundary>
     </>
+  );
+}
+function ErrorDemo() {
+  return(
+    <p style={{ color: "red", textAlign: "center", fontSize: 20, 
+      lineHeight: 2, paddingTop: 65, paddingLeft: 15, paddingRight: 15, }}>
+      Something went wrong. Please try starting it again!
+    </p>
   );
 }
