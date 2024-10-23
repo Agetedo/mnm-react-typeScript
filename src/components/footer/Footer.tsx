@@ -34,7 +34,9 @@ function FooterLogo({ logoSrc, logoAlt }: FooterLogoProps) {
 }
 
 function FooterRights({ rightsText }: { rightsText: string }) {
-  return ( <p className="footer__text">{new Date().getFullYear()} &copy;{rightsText}</p> );
+  return (
+    <p className="footer__text">{new Date().getFullYear()} &copy;{rightsText}</p>
+  );
 }
 
 type InputRegister = {
