@@ -23,5 +23,7 @@ function ProccesCard() {
       </p>
     </div>
   );   
-  return <div className="procces__items">{cardList}</div>
+  return (
+    <div className="procces__items">{cardList}</div>
+  );
 }
