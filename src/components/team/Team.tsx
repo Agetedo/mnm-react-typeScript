@@ -37,5 +37,7 @@ function MemberCard() {
       </div>
     </div>
   );    
-  return <div className="team__items">{memberList}</div>
+  return (
+    <div className="team__items">{memberList}</div>
+  );
 }
