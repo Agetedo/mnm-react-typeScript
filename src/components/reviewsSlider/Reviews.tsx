@@ -8,6 +8,18 @@ import "swiper/scss/autoplay";
 import "swiper/scss/keyboard";
 import "./Reviews.scss";
 
+const reviewsList = reviews.map(slide => 
+  <SwiperSlide key={slide.id}>
+    <q className="reviews__text">{slide.reviewText}</q>
+    <img
+      className="reviews__image"
+      src={slide.imageSrc}
+      alt={slide.reviewAutor}
+    />
+    <p className="reviews__autor">{slide.reviewAutor}</p>
+  </SwiperSlide>
+);
+
 export default function Reviews() {
   return (
     <Conteiner className="reviews__gallery">
@@ -42,15 +54,3 @@ function ReviewsQuotes() {
     </div>
   );
 }
-
-const reviewsList = reviews.map(slide => 
-  <SwiperSlide key={slide.id}>
-    <q className="reviews__text">{slide.reviewText}</q>
-    <img
-      className="reviews__image"
-      src={slide.imageSrc}
-      alt={slide.reviewAutor}
-    />
-    <p className="reviews__autor">{slide.reviewAutor}</p>
-  </SwiperSlide>
-);
