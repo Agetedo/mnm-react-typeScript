@@ -9,5 +9,7 @@ export default function BlockTitle({ title }: { title: string }) {
   );
 }
 function Line() {
-  return ( <> <hr className="title__line" /> </> );
+  return ( 
+    <><hr className="title__line" /></>
+  );
 }
