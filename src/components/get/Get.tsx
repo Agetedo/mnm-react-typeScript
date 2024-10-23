@@ -5,14 +5,13 @@ import Conteiner from "../Conteiner";
 import closeIcon from "/modal-close-icon.svg";
 import mnmLogo from "/logo.svg";
 import "./Get.scss";
+const getText = "MINIMAL is a full-service digital creative agency located in Ontorio Canada. We focus on design, consulting, technology, and photography. We've been building unique digital products, platforms and experiences for the past 6 years. Let Us help Your company grow.";
 
 export default function Get() {
   return (
     <Conteiner className="get">
       <GetText  
-        text={"MINIMAL is a full-service digital creative agency located in Ontorio Canada. We focus on design,\
-        consulting, technology, and photography. We've been building unique digital products, platforms\
-        and experiences for the past 6 years. Let Us help Your company grow."}
+        text={getText}
       />
       <GetModal getButtonText={"Get in Touch"}/>
     </Conteiner>
@@ -20,8 +19,8 @@ export default function Get() {
 }
 
 function GetText({ text }: { text: string }) {
-  return(
-    <><p className="get__text">{text}</p></>
+  return (
+    <p className="get__text">{text}</p>
   );
 }
 
