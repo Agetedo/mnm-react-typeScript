@@ -29,5 +29,7 @@ function GalleryProject() {
       </div>
     </div>
   ); 
-  return <div className="gallery-items">{galleryList}</div>
+  return (
+    <div className="gallery-items">{galleryList}</div>
+  );
 }
