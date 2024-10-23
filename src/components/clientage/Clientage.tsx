@@ -23,7 +23,9 @@ function ClientsConteiner({ children, className }: ClientsContainerProps) {
 }
 
 function ClientsTitle({ title }: { title:string }) {
-  return ( <><h2 className="clients__title">{title}</h2></> );
+  return (
+    <><h2 className="clients__title">{title}</h2></>
+  );
 }
 
 function ClientsCards() {
@@ -32,5 +34,7 @@ function ClientsCards() {
       <img src={logo.imageSrc} alt={logo.imageAlt}/>
     </li>
   );  
-  return <ul className="clients__list">{clientsList}</ul>
+  return (
+    <ul className="clients__list">{clientsList}</ul>
+  );
 }
