@@ -109,7 +109,7 @@ function ContactSocial({ children, iconSrc, caption }: ContactSocialProps) {
 }
 
 function ContactItems({ children }: { children: React.ReactNode }) {
-  return(
+  return (
     <div className="contact-items">
       {children}
     </div>
