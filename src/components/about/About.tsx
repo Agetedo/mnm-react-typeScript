@@ -34,7 +34,9 @@ function DifferenceConteiner({ children, className }: DifferenceContainerProps) 
 }
 
 function DifferenceTitle ({ title }: { title: string }) {
-  return ( <><h3 className="difference__title">{title}</h3></> );
+  return (
+    <><h3 className="difference__title">{title}</h3></>
+  );
 }
 
 interface TextContent {
