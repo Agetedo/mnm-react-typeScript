@@ -21,7 +21,7 @@ export default function Layout() {
   );
 }
 function ErrorDemo() {
-  return(
+  return (
     <p style={{ color: "red", textAlign: "center", fontSize: 20, 
       lineHeight: 2, paddingTop: 65, paddingLeft: 15, paddingRight: 15, }}>
       Something went wrong. Please try starting it again!
