@@ -58,7 +58,9 @@ function MediaContent() {
   const creationList = creationContent.map( intro => 
     <img key={intro.id} src={intro.imageSrc} alt={intro.imageAlt} />
   );   
-  return ( <div className="media__container">{creationList}</div> );
+  return (
+    <div className="media__container">{creationList}</div>
+  );
 }
 
 interface VideoContentProps {
